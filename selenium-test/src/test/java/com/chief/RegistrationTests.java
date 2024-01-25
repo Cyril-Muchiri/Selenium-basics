@@ -1,10 +1,8 @@
 package com.chief;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class RegistrationTests extends BaseTestClass {
@@ -29,16 +27,13 @@ public class RegistrationTests extends BaseTestClass {
         WebElement registerButton = driver.findElement(By.cssSelector(".fxt-btn-fill"));
         registerButton.click();
 
-        
-
-
     }
 
     @Test
     public void registrationFail() {
 
         driver.get("http://localhost:8080/votify-v2/register");
-        
+
         String title = driver.getTitle();
         assertEquals("Votify | Remastering polls", title);
 

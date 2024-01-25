@@ -3,12 +3,9 @@ package com.chief;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 public class LoginTests extends BaseTestClass {
    
@@ -33,7 +30,7 @@ public class LoginTests extends BaseTestClass {
     public void loginFailed() {
 
         driver.get("http://localhost:8080/votify-v2");
-        
+
         String title = driver.getTitle();
         assertEquals("Votify | Remastering polls", title);
 
