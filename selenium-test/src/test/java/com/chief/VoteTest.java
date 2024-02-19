@@ -1,12 +1,13 @@
 package com.chief;
 
-import org.junit.jupiter.api.Test;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.By.ByClassName;
 import org.openqa.selenium.By.ByCssSelector;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.ByIdOrName;
+import org.testng.annotations.Test;
 
 import java.util.List;
 
@@ -20,7 +21,7 @@ public class VoteTest extends BaseTestClass {
         LoginTests loginTests = new LoginTests();
         loginTests.loginSuccess();
 
-        driver.get("http://localhost:8080/votify-v2/vote");
+        driver.get("http://192.168.49.2:32000/votify-v2/vote");
 
         List<WebElement> choices = driver.findElements(By.cssSelector(".choice-item"));
 

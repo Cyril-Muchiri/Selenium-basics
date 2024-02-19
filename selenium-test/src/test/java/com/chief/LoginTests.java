@@ -1,18 +1,19 @@
 package com.chief;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.Test;
+import static org.junit.Assert.assertEquals;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.*;
 
 public class LoginTests extends BaseTestClass {
    
-    @Test
+    @Test(priority = 2)
     public void loginSuccess() {
 
-        driver.get("http://localhost:8080/votify-v2");
+        driver.get("http://192.168.49.2:32000/votify-v2");
         String title = driver.getTitle();
         assertEquals("Votify | Remastering polls", title);
 
@@ -29,7 +30,7 @@ public class LoginTests extends BaseTestClass {
     @Test
     public void loginFailed() {
 
-        driver.get("http://localhost:8080/votify-v2");
+        driver.get("http://192.168.49.2:32000/votify-v2");
 
         String title = driver.getTitle();
         assertEquals("Votify | Remastering polls", title);
@@ -47,8 +48,5 @@ public class LoginTests extends BaseTestClass {
         assertEquals("Action Failed !!", rtitle);
     }
 
-    @AfterAll
-    public static void destroy() {
-        driver.quit();
-    }
+   
 }

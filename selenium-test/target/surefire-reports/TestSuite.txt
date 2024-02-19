@@ -1,4 +1,49 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.617 sec
+Tests run: 26, Failures: 5, Errors: 0, Skipped: 20, Time elapsed: 162.344 s <<< FAILURE! - in TestSuite
+com.chief.VoteTest.setUp  Time elapsed: 16.458 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 1 
+Host info: host: 'BARACUDA-PC', ip: '127.0.1.1'
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.5.0-18-generic', java.version: '17.0.9'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {binary: /usr/bin/firefox}}]}]
+
+com.chief.LoginTests.setUp  Time elapsed: 5.91 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 1 
+Host info: host: 'BARACUDA-PC', ip: '127.0.1.1'
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.5.0-18-generic', java.version: '17.0.9'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {binary: /usr/bin/firefox}}]}]
+
+com.chief.DashBoard.setUp  Time elapsed: 130.928 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: Failed to read marionette port 
+Host info: host: 'BARACUDA-PC', ip: '127.0.1.1'
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.5.0-18-generic', java.version: '17.0.9'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {binary: /usr/bin/firefox}}]}]
+
+com.chief.RegistrationTests.setUp  Time elapsed: 3.594 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 1 
+Host info: host: 'BARACUDA-PC', ip: '127.0.1.1'
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.5.0-18-generic', java.version: '17.0.9'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {binary: /usr/bin/firefox}}]}]
+
+com.chief.CreatePollTest.setUp  Time elapsed: 5 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 1 
+Host info: host: 'BARACUDA-PC', ip: '127.0.1.1'
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.5.0-18-generic', java.version: '17.0.9'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {binary: /usr/bin/firefox}}]}]
+

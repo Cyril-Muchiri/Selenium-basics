@@ -1,24 +1,24 @@
 package com.chief;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.Assert.*;
 
-import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.*;
 
 public class DashBoard  extends BaseTestClass{
 
-    @Test
+    @Test(priority = 3)
     public void testDashboard(){
 
         LoginTests loginTests = new LoginTests();
         loginTests.loginSuccess();
 
-        driver.get("http://localhost:8080/votify-v2/home");
+        driver.get("http://192.168.49.2:32000/votify-v2/home");
       
         WebElement titleElement = driver.findElement(By.cssSelector(".h3.mb-0.text-gray-800"));
+        
         assertEquals("Dashboard", titleElement.getText());
 
         WebElement accountName = driver.findElement(By.cssSelector("h4"));
@@ -37,7 +37,7 @@ public class DashBoard  extends BaseTestClass{
         LoginTests loginTests = new LoginTests();
         loginTests.loginSuccess();
 
-        driver.get("http://localhost:8080/votify-v2/home");
+        driver.get("http://192.168.49.2:32000/votify-v2/home");
         WebElement dashboardLink = driver.findElement(By.cssSelector("a[@href='./home']"));
         dashboardLink.click();
        
@@ -48,7 +48,7 @@ public class DashBoard  extends BaseTestClass{
         LoginTests loginTests = new LoginTests();
         loginTests.loginSuccess();
 
-        driver.get("http://localhost:8080/votify-v2/home");
+        driver.get("http://192.168.49.2:32000/votify-v2/home");
         WebElement activePollsLink = driver.findElement(By.cssSelector("a[@href='./active']"));
         activePollsLink.click();
 
@@ -60,7 +60,7 @@ public class DashBoard  extends BaseTestClass{
         LoginTests loginTests = new LoginTests();
         loginTests.loginSuccess();
 
-        driver.get("http://localhost:8080/votify-v2/home");
+        driver.get("http://192.168.49.2:32000/votify-v2/home");
         WebElement createPollLink = driver.findElement(By.cssSelector("a[@href='./create']"));
         createPollLink.click();
      
@@ -73,7 +73,7 @@ public class DashBoard  extends BaseTestClass{
         LoginTests loginTests = new LoginTests();
         loginTests.loginSuccess();
 
-        driver.get("http://localhost:8080/votify-v2/home");
+        driver.get("http://192.168.49.2:32000/votify-v2/home");
         WebElement signOutLink = driver.findElement(By.cssSelector("a[@href='./logout']"));
         signOutLink.click();
     }
@@ -83,7 +83,7 @@ public class DashBoard  extends BaseTestClass{
         LoginTests loginTests = new LoginTests();
         loginTests.loginSuccess();
 
-        driver.get("http://localhost:8080/votify-v2/home");
+        driver.get("http://192.168.49.2:32000/votify-v2/home");
         WebElement pollDescription = driver.findElement(By.cssSelector("div[@class='card__description']/p"));
         assertTrue(pollDescription.isDisplayed());
      

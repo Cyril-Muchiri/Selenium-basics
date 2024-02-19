@@ -1,4 +1,5 @@
 com/chief/RegressionTestSuite.class
+com/chief/SampleTestNg.class
 com/chief/CreatePollTest.class
 com/chief/DashBoard.class
 com/chief/LoginTests.class

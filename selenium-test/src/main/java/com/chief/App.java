@@ -14,7 +14,7 @@ public class App
 
         WebDriver driver = new ChromeDriver();
 
-        driver.get("http://localhost:8080/votify-v2/");
+        driver.get("http://192.168.49.2:32000/votify-v2");
 
         driver.getTitle();
 
