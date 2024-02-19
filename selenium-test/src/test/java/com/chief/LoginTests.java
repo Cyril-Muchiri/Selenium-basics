@@ -10,7 +10,7 @@ import org.testng.annotations.*;
 
 public class LoginTests extends BaseTestClass {
    
-    @Test(priority = 2)
+    @Test
     public void loginSuccess() {
 
         driver.get("http://192.168.49.2:32000/votify-v2");

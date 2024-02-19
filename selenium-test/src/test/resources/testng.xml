@@ -2,8 +2,12 @@
 
 <suite name="Suite1" verbose="1" >
   <test name="Regression1"   >
-    <packages>
-      <package name="com.chief" />
-   </packages>
+     <classes>
+            <class name="com.chief.RegistrationTests"/>
+            <class name="com.chief.LoginTests"/>
+            <class name="com.chief.DashBoard"/>
+            <class name="com.chief.CreatePollTest"/>
+            
+        </classes>
  </test>
 </suite>

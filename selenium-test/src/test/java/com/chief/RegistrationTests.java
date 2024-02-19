@@ -33,7 +33,7 @@ public class RegistrationTests extends BaseTestClass {
 
     }
 
-    @Test
+    @Test(priority = 2)
     public void registrationFail() {
 
         driver.get("http://192.168.49.2:32000/votify-v2");
